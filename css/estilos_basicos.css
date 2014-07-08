@@ -1,0 +1,167 @@
+/* Enlace de Fuentes de Google */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Belgrano);
+
+/* Reset de todos los elementos */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos para el body */
+body {
+	font-family: "Droid Sans", sans-serif;
+	font-size: 0.9em;
+}
+
+h1, h2 {
+	font-family: "Belgrano", serif;
+}
+
+/* Estilos para Div Contenedor */
+#contenedor {
+	background-color: #eee;
+	margin:0 auto;
+	max-width: 960px;
+}
+
+/* Estilos para el Header */
+figure, #nav_superior {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+}
+
+figure img {
+	width: 300px;
+}
+
+#nav_superior {
+	height: 124px;
+	line-height: 124px;
+	text-align: right;
+	width: 55%;
+}
+
+#nav_superior ul li {
+	background: -webkit-linear-gradient(left, #fff , #ccc); /* For Safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(right, #fff, #ccc); /* For Firefox 3.6 to 15 */
+    background: -o-linear-gradient(right, #fff, #ccc); /* For Opera 11.1 to 12.0 */
+    background: linear-gradient(right, #fff , #ccc); /* Standard syntax (must be last) */
+	display: inline-block;
+	padding: 0 10px 0 30px;
+}
+
+#nav_superior ul li a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Estilos para el Aside con Carrousel */
+#carrousel {
+	background-color: #666;
+	height: 200px;	
+	width: 100%;
+}
+
+/* Estilos para el Aside o Barra de navegación izquierda */
+#contenido_principal aside, #contenido_principal main {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+#contenido_principal aside hgroup h3 {
+	font-size: 1.5em;
+	margin-top: 40px; 
+	text-align: center;
+}
+
+#contenido_principal aside nav {
+	padding: 45px 0 0 45px;
+}
+
+#contenido_principal aside nav ul li {
+	list-style: none;
+	padding: 15px;
+}
+
+#contenido_principal aside nav ul li a {
+	text-decoration: none;
+}
+
+/* Estilos para Sección de Contenido Principal */
+#contenido_principal main {
+	background-color: #ddd;
+	width: 755px;
+}
+
+/* Estilos para las Secciones Nuevos-Destacados-Más Vendidos */
+section {
+	background-color: #fff;
+	margin:40px auto;
+	padding: 30px 5px 30px 65px;
+}
+
+section h2 {
+	font-size: 2em;
+	margin-bottom: 25px;
+}
+
+#nuevos {
+	background-color: #60caff;
+}
+
+#destacados {
+	background-color: #fc9300;
+}
+
+#masvendidos {
+	background-color: #ab0085;
+}
+
+/* Estilos para Articles o información de Discos */
+article {
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+}
+
+article figure img {
+	border: 5px solid #fff;
+	box-shadow: -5px 5px 9px rgba(0,0,0,0.4);
+	margin: 0 auto;
+	width: 150px;
+}
+
+article hgroup h2 {
+	font-size: 1.3em;
+	margin-bottom: 0;
+	margin-top: 20px; 
+}
+
+/* Estilos para el Footer con Nav Inferior y Copyright */
+footer {
+	background-color: #333;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+footer p {
+	margin-left: 40px;
+}
+
+footer #nav_inferior, footer p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer #nav_inferior a {
+	color: #fff;
+	font-size: 0.8em;
+	text-decoration: none;
+}
