@@ -26,9 +26,9 @@ h1, h2 {
 }
 
 /* Estilos para el Header */
-figure, #nav_superior {
+figure, #nav_busqueda {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 40%;
 }
 
@@ -36,38 +36,105 @@ figure img {
 	width: 300px;
 }
 
-#nav_superior {
-	height: 124px;
-	line-height: 124px;
-	text-align: right;
+#nav_busqueda {
 	width: 55%;
 }
 
+#busqueda {
+	border: 2px solid #ddd; 
+	border-radius: 35px;
+	box-shadow: inset 2px 2px 5px #ddd;
+	color: #ccc;
+	height: 20px;
+	margin: 5px auto;
+	padding: 10px;
+	width: 95%;
+}
+
+#busqueda p {
+	position: relative;
+	bottom: 15px;
+	left: 10px;
+}
+
+#busqueda::before {
+	content: "Búsqueda";
+	color: #fff;
+	background-color: #000;
+	border-radius: 20px;
+	box-shadow: -2px 1px 7px #000;
+	padding: 10px;
+	position: relative;
+	left:425px;
+	text-shadow: 1px 1px 1px #000;
+	vertical-align: middle;
+}
+
+#nav_superior {
+	background: -webkit-linear-gradient(top, #888 15%, #333 30%, #000 100%);
+	background: -moz-linear-gradient(right, #888 15%, #333 30%, #000 100%);
+    background: -o-linear-gradient(right, #888 15%, #333 30%, #000 100%);
+    background: linear-gradient(right, #888 15%, #333 30%, #000 100%);
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 100%;
+}
+
 #nav_superior ul li {
-	background: -webkit-linear-gradient(left, #fff , #ccc); /* For Safari 5.1 to 6.0 */
-	background: -moz-linear-gradient(right, #fff, #ccc); /* For Firefox 3.6 to 15 */
-    background: -o-linear-gradient(right, #fff, #ccc); /* For Opera 11.1 to 12.0 */
-    background: linear-gradient(right, #fff , #ccc); /* Standard syntax (must be last) */
 	display: inline-block;
-	padding: 0 10px 0 30px;
+	padding: 0 20px 0 20px;
+	text-shadow: -1px 1px 1px #000;
 }
 
 #nav_superior ul li a {
-	color: #333;
+	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 }
 
+#nav_superior a:link, #nav_superior a:visited{
+	color: #fff;
+}
+
+#nav_superior a:hover{
+	color: #60caff;
+  	-webkit-transition: color 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in;
+	-o-transition: color 0.1s ease-in;
+	transition: color 0.1s ease-in;
+}
+
+#nav_superior a:active{
+	color: #fc9300;
+	-webkit-transition: color 0s ease-in;
+	-moz-transition: color 0s ease-in;
+	-ms-transition: color 0s ease-in;
+	-o-transition: color 0s ease-in;
+	transition: color 0s ease-in;
+}
+
 /* Estilos para el Aside con Carrousel */
 #carrousel {
-	background-color: #666;
 	height: 200px;	
 	width: 100%;
 }
 
+#carrousel figure img {
+	width: 960px;
+}
+
 /* Estilos para el Aside o Barra de navegación izquierda */
+#contenido_principal aside {
+	background-color: #fff;
+	z-index: 1000;
+}
+
 #contenido_principal aside, #contenido_principal main {
 	display: inline-block;
+	height: 1450px;
 	vertical-align: top;
 	width: 200px;
 }
@@ -100,7 +167,8 @@ figure img {
 /* Estilos para las Secciones Nuevos-Destacados-Más Vendidos */
 section {
 	background-color: #fff;
-	margin:40px auto;
+	border-radius: 0 40px 20px 0;
+	margin:10px auto;
 	padding: 30px 5px 30px 65px;
 }
 
@@ -109,30 +177,82 @@ section h2 {
 	margin-bottom: 25px;
 }
 
+#nuevos>h2, #destacados>h2, #masvendidos>h2 {
+	background-color: #fff;
+	border-radius: 25px;
+	box-shadow: -4px 4px 12px rgba(0,0,0,0.4);
+	padding: 5px 45px;
+	text-align: center;
+	text-shadow: -1px 1px 1px #999;
+	width: 575px;
+}
+
+#nuevos>h2 {
+	color: #60caff;
+}
+
+#destacados>h2 {
+	color: #fc9300;
+}
+
+#masvendidos>h2 {
+	color: #ab0085;
+}
+
 #nuevos {
 	background-color: #60caff;
+	background: -webkit-linear-gradient(#60caff, #4a9cc4 50%);
+	background: -moz-linear-gradient(#60caff, #4a9cc4 50%);
+    background: -o-linear-gradient(#60caff, #4a9cc4 50%);
+    background: linear-gradient(#60caff, #4a9cc4 50%);
 }
 
 #destacados {
 	background-color: #fc9300;
+	background: -webkit-linear-gradient(#fc9300, #b86b00 50%);
+	background: -moz-linear-gradient(#fc9300, #b86b00 50%);
+    background: -o-linear-gradient(#fc9300, #b86b00 50%);
+    background: linear-gradient(#fc9300, #b86b00 50%);
 }
 
 #masvendidos {
 	background-color: #ab0085;
+	background: -webkit-linear-gradient(#ab0085, #8a006b 50%);
+	background: -moz-linear-gradient(#ab0085, #8a006b 50%);
+    background: -o-linear-gradient(#ab0085, #8a006b 50%);
+    background: linear-gradient(#ab0085, #8a006b 50%);
 }
 
 /* Estilos para Articles o información de Discos */
 article {
+	background-color: #fff;
+	background: -webkit-linear-gradient(bottom, #ddd, #fff);
+	background: -moz-linear-gradient(top, #ddd, #fff);
+    background: -o-linear-gradient(top, #ddd, #fff);
+    background: linear-gradient(top, #ddd, #fff);
+	border-radius: 10px;
 	display: inline-block;
+	min-height: 270px;
+	padding-top: 25px;
 	vertical-align: top;
 	width: 32%;
 }
 
 article figure img {
 	border: 5px solid #fff;
-	box-shadow: -5px 5px 9px rgba(0,0,0,0.4);
-	margin: 0 auto;
-	width: 150px;
+	box-shadow: -3px 3px 15px rgba(0,0,0,0.4);
+	position: relative;
+	left:42px;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	width: 130px;
+}
+
+article hgroup {
+	margin: 10px 0 0 22px;
 }
 
 article hgroup h2 {
