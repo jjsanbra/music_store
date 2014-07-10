@@ -14,7 +14,7 @@ body {
 	font-size: 0.9em;
 }
 
-h1, h2 {
+h1, h2, aside h3 {
 	font-family: "Belgrano", serif;
 }
 
@@ -74,9 +74,9 @@ figure img {
 
 #nav_superior {
 	background: -webkit-linear-gradient(top, #888 15%, #333 30%, #000 100%);
-	background: -moz-linear-gradient(right, #888 15%, #333 30%, #000 100%);
-    background: -o-linear-gradient(right, #888 15%, #333 30%, #000 100%);
-    background: linear-gradient(right, #888 15%, #333 30%, #000 100%);
+	background: -moz-linear-gradient(bottom, #888 15%, #333 30%, #000 100%);
+    background: -o-linear-gradient(bottom, #888 15%, #333 30%, #000 100%);
+    background: linear-gradient(bottom, #888 15%, #333 30%, #000 100%);
 	border-radius: 20px;
 	height: 40px;
 	line-height: 40px;
@@ -131,6 +131,11 @@ figure img {
 /* Estilos para el Aside o Barra de navegación izquierda */
 #contenido_principal aside {
 	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 10px 0 20px rgba(0,0,0,0.6);
+	margin-top: 10px;
+	position: relative;
+	z-index: 100;
 }
 
 #contenido_principal aside, #contenido_principal main {
@@ -141,21 +146,56 @@ figure img {
 }
 
 #contenido_principal aside hgroup h3 {
+	background: -webkit-linear-gradient(#e31400 70%, #b00100 85%);
+	background: -moz-linear-gradient(#e31400 70%, #b00100 85%);
+	background: -o-linear-gradient(#e31400 70%, #b00100 85%);
+	background: linear-gradient(#e31400 70%, #b00100 85%);
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 5px 10px #999;
+	color: #fff;
 	font-size: 1.5em;
-	margin-top: 40px; 
+	height:40px;
+	padding-top: 10px;
+	position: absolute;
 	text-align: center;
+	width: 100%;
+	z-index: 200;
 }
 
 #contenido_principal aside nav {
-	padding: 45px 0 0 45px;
+	padding: 15px 0 0 0;
 }
 
 #contenido_principal aside nav ul li {
+	border-bottom: 1px dotted #ccc;
+	background: -webkit-linear-gradient(left, #ddd, #fff);
+	background: -moz-linear-gradient(#ddd, #fff);
+	background: -o-linear-gradient(#ddd, #fff);
+	background: linear-gradient(left, #ddd, #fff);
 	list-style: none;
-	padding: 15px;
+	padding: 15px 0 15px 25px;
+	position: relative;
+	top: 40px;
+}
+
+#contenido_principal aside nav ul li:hover {
+	box-shadow: inset 2px 2px 5px #aaa;
+	font-size: 1.5em;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-ms-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+	text-shadow: 1px 1px 1px #aaa;
 }
 
 #contenido_principal aside nav ul li a {
+	text-decoration: none;
+}
+
+#contenido_principal aside nav ul li a:link, #contenido_principal aside nav ul li a:visited {
+	color: #ab0085;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -168,9 +208,9 @@ figure img {
 /* Estilos para las Secciones Nuevos-Destacados-Más Vendidos */
 section {
 	background-color: #fff;
-	border-radius: 0 40px 20px 0;
+	border-radius: 20px 40px 20px 0;
 	margin: 10px auto;
-	padding: 30px 5px 30px 65px;
+	padding: 30px 5px 30px 30px;
 }
 
 section h2 {
@@ -185,7 +225,7 @@ section h2 {
 	padding: 5px 45px;
 	text-align: center;
 	text-shadow: -1px 1px 1px #999;
-	width: 575px;
+	width: 605px;
 }
 
 #nuevos>h2 {
@@ -233,10 +273,12 @@ article {
     background: linear-gradient(top, #ddd, #fff);
 	border-radius: 10px;
 	display: inline-block;
+	margin: 0 8px;
 	min-height: 270px;
 	padding-top: 25px;
+	position: relative;
 	vertical-align: top;
-	width: 32%;
+	width: 30%;
 }
 
 article figure img {
@@ -253,7 +295,7 @@ article figure img {
 }
 
 article hgroup {
-	position: relative;
+	position: absolute;
 	left:25px;
 }
 
