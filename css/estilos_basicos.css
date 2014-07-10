@@ -73,10 +73,10 @@ figure img {
 }
 
 #nav_superior {
-	background: -webkit-linear-gradient(top, #888 15%, #333 30%, #000 100%);
-	background: -moz-linear-gradient(bottom, #888 15%, #333 30%, #000 100%);
-    background: -o-linear-gradient(bottom, #888 15%, #333 30%, #000 100%);
-    background: linear-gradient(bottom, #888 15%, #333 30%, #000 100%);
+	background: -webkit-linear-gradient(#888 15%, #333 30%, #000 100%);
+	background: -moz-linear-gradient(#888 15%, #333 30%, #000 100%);
+    background: -o-linear-gradient(#888 15%, #333 30%, #000 100%);
+    background: linear-gradient(#888 15%, #333 30%, #000 100%);
 	border-radius: 20px;
 	height: 40px;
 	line-height: 40px;
@@ -129,18 +129,22 @@ figure img {
 }
 
 /* Estilos para el Aside o Barra de navegación izquierda */
+#contenido_principal {
+	position: relative;
+}
+
 #contenido_principal aside {
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 10px 0 20px rgba(0,0,0,0.6);
 	margin-top: 10px;
-	position: relative;
+	position: absolute;
 	z-index: 100;
 }
 
 #contenido_principal aside, #contenido_principal main {
 	display: inline-block;
-	height: 1320px;
+	height: 1300px;
 	vertical-align: top;
 	width: 200px;
 }
@@ -167,29 +171,25 @@ figure img {
 }
 
 #contenido_principal aside nav ul li {
+	list-style: none;
+}
+
+#contenido_principal aside nav ul li a {
 	border-bottom: 1px dotted #ccc;
 	background: -webkit-linear-gradient(left, #ddd, #fff);
 	background: -moz-linear-gradient(#ddd, #fff);
 	background: -o-linear-gradient(#ddd, #fff);
 	background: linear-gradient(left, #ddd, #fff);
 	list-style: none;
+	display: block;
 	padding: 15px 0 15px 25px;
 	position: relative;
 	top: 40px;
-}
-
-#contenido_principal aside nav ul li:hover {
-	box-shadow: inset 2px 2px 5px #aaa;
-	font-size: 1.5em;
-	-webkit-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-ms-transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
 	transition: all 0.1s ease-in;
-	text-shadow: 1px 1px 1px #aaa;
-}
-
-#contenido_principal aside nav ul li a {
 	text-decoration: none;
 }
 
@@ -199,23 +199,33 @@ figure img {
 	text-decoration: none;
 }
 
+#contenido_principal aside nav ul li a:hover {
+	color: #fc9300;
+	box-shadow: inset 2px 2px 5px #aaa;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #aaa;
+}
+
 /* Estilos para Sección de Contenido Principal */
 #contenido_principal main {
 	background-color: #fff;
-	width: 755px;
+	position: relative;
+	left: 190px;
+	width: 765px;
 }
 
 /* Estilos para las Secciones Nuevos-Destacados-Más Vendidos */
 section {
 	background-color: #fff;
-	border-radius: 20px 40px 20px 0;
+	border-radius: 0 40px 20px 0;
 	margin: 10px auto;
 	padding: 30px 5px 30px 30px;
 }
 
-section h2 {
+section>h2 {
 	font-size: 2em;
 	margin-bottom: 25px;
+	margin-left: 10px
 }
 
 #nuevos>h2, #destacados>h2, #masvendidos>h2 {
@@ -267,10 +277,10 @@ section h2 {
 /* Estilos para Articles o información de Discos */
 article {
 	background-color: #fff;
-	background: -webkit-linear-gradient(bottom, #ddd, #fff);
-	background: -moz-linear-gradient(top, #ddd, #fff);
-    background: -o-linear-gradient(top, #ddd, #fff);
-    background: linear-gradient(top, #ddd, #fff);
+	background: -webkit-linear-gradient(#ddd, #fff);
+	background: -moz-linear-gradient(#ddd, #fff);
+    background: -o-linear-gradient(#ddd, #fff);
+    background: linear-gradient(#ddd, #fff);
 	border-radius: 10px;
 	display: inline-block;
 	margin: 0 8px;
@@ -285,13 +295,13 @@ article figure img {
 	border: 5px solid #fff;
 	box-shadow: -3px 3px 15px rgba(0,0,0,0.4);
 	position: relative;
-	left:42px;
+	left:40px;
 	-webkit-transform: rotate(-3deg);
 	-moz-transform: rotate(-3deg);
 	-ms-transform: rotate(-3deg);
 	-o-transform: rotate(-3deg);
 	transform: rotate(-3deg);
-	width: 130px;
+	width: 135px;
 }
 
 article hgroup {
@@ -308,8 +318,9 @@ article hgroup h2 {
 /* Estilos para el Aside Publicidad */
 #publicidad figure img {
 	background-color: #666;
+	border-radius: 20px;
 	height: 100px;
-	margin-bottom: 8px;
+	margin: 25px 0 10px 0;
 	width: 960px;
 }
 
