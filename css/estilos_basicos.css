@@ -77,8 +77,8 @@ header figure>img {
 	color: #fff;
 	padding: 10px;
 	position: relative;
-	left:425px;
-	top: -15px;
+	left:85%;
+	bottom: 15px;
 	text-shadow: 1px 1px 1px #000;
 	vertical-align: middle;
 }
