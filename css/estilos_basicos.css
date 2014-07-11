@@ -37,7 +37,7 @@ h1, h2, aside h3 {
 }
 
 /* Estilos para el Header */
-figure, #nav_busqueda {
+header>figure, #nav_busqueda {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40%;
@@ -136,7 +136,7 @@ header figure>img {
 }
 
 #carrousel figure img {
-	max-width: 1000%;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
