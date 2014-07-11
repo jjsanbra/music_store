@@ -8,8 +8,9 @@
 	padding: 0;
 }
 
+/* Estilo para Etiqueta HTML - Fondo adaptable */
 html {
-    background: url('../images/background.png') no-repeat fixed center;
+    background: url("../images/background.png") no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,7 +23,7 @@ body {
 	font-size: 0.9em;
 }
 
-h1, h2, aside h3 {
+h1, h2 {
 	font-family: "Belgrano", serif;
 }
 
@@ -53,7 +54,7 @@ header figure>img {
 }
 
 #busqueda {
-	background-color: #fff; 
+	background-color: #fff;
 	border: 2px solid #ddd; 
 	border-radius: 35px;
 	box-shadow: inset 2px 2px 5px #ddd;
@@ -77,8 +78,8 @@ header figure>img {
 	color: #fff;
 	padding: 10px;
 	position: relative;
-	left:85%;
 	bottom: 15px;
+	left: 85%;
 	text-shadow: 1px 1px 1px #000;
 	vertical-align: middle;
 }
@@ -132,7 +133,7 @@ header figure>img {
 /* Estilos para el Aside con Carrousel */
 #carrousel {
 	height: 200px;	
-	max-width: 100%;
+	width: 100%;
 }
 
 #carrousel figure img {
@@ -187,20 +188,20 @@ header figure>img {
 
 #contenido_principal aside nav ul li a {
 	background: -webkit-linear-gradient(left, #ddd, #fff);
-	background: -moz-linear-gradient(#ddd, #fff);
-	background: -o-linear-gradient(#ddd, #fff);
+	background: -moz-linear-gradient(left, #ddd, #fff);
+	background: -o-linear-gradient(left, #ddd, #fff);
 	background: linear-gradient(left, #ddd, #fff);
 	border-bottom: 1px dotted #ccc;
 	display: block;
 	padding: 15px 0 15px 25px;
 	position: relative;
-	top: 35px;
+	top: 40px;
 	text-decoration: none;
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
 	-ms-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
-	transition: all 0.1s ease;
+	transition: all 0.1s ease-in;
 }
 
 #contenido_principal aside nav ul li a:link, #contenido_principal aside nav ul li a:visited {
@@ -216,11 +217,12 @@ header figure>img {
 }
 
 .espacio_vertical {
-	margin-top: 35px
+	margin-top: 38px;
 }
 
 /* Estilos para Sección de Contenido Principal */
 #contenido_principal main {
+	background-color: #fff;
 	position: relative;
 	left: 190px;
 	width: 765px;
@@ -318,21 +320,52 @@ article figure img {
 
 article hgroup {
 	position: absolute;
-	left:20px;
+	left:15px;
 }
 
 article hgroup h2 {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	margin-bottom: 0;
-	margin-top: 20px; 
+	margin-top: 15px; 
+}
+
+article hgroup h5{
+	text-align: right;
+}
+
+
+.album {
+	color: #e31400;
+}
+
+.artista {
+	color: #999;
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+
+.anio {
+	color: #40a8dd;
+}
+
+.precio {
+	background-color: #e31400;
+	border-radius: 10px;
+	box-shadow: -2px 2px 7px #999;
+	color: #fff;
+	font-size: 1.7em;
+	margin-left: 135px;
+	padding: 4px;
+	text-align: center;
+	width: 25%;
 }
 
 /* Estilos para el Aside Publicidad */
 #publicidad figure img {
 	background-color: #666;
-	border-radius: 20px;
 	height: 100px;
-	margin: 25px 0 10px 0;
+	margin-bottom: 8px;
+	margin-top: 20px;
 	width: 960px;
 }
 
