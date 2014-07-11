@@ -28,7 +28,7 @@ h1, h2, aside h3 {
 
 /* Estilos para Div Contenedor */
 #contenedor {
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.5);
 	border-radius: 30px;
 	box-shadow: 0 0 10px #999;
 	margin:20px auto;
